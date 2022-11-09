@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+</head>
+<link rel="stylesheet" href="carousel.css">
+<body>
+    <h1>A slide of foods/friuts people eat the most</h1>
+    <div class="slide-container">
+        <div class="slider fading">
+            <div class="count">1 / 6</div>
+            <img src="images/apple.jpg" alt="">
+        </div>
+        <div class="slider fading">
+            <div class="count">2 / 6</div>
+            <img src="images/bananas.jpg" alt="">
+        </div>
+        <div class="slider fading">
+            <div class="count">3 / 6</div>
+            <img src="images/eggs.jpg" alt="">
+        </div>
+        <div class="slider fading">
+            <div class="count">4 / 6</div>
+            <img src="images/oranges.jpg" alt="">
+        </div>
+        <div class="slider fading">
+            <div class="count">5 / 6</div>
+            <img src="images/potato.jpg" alt="">
+        </div>
+        <div class="slider fading">
+            <div class="count">6 / 6</div>
+            <img src="images/red fruite.jpg" alt="">
+        </div>
+        <a  class="prev" onclick="change(-1)">❮❮</a>
+        <a  class="next" onclick="change(1)">❯❯</a>
+
+        <!-- /* current slide indicator dot */ -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span>         
+        </div>
+    </div>
+
+
+    <script src="carousel.js"></script>
+    
+</body>
+</html>
